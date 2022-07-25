@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Docker-compose-file
+    container_name: simple-python-server-flask
+    command: python3 flask-main.py --reload --reload-include *
+    ports:
+      - 5000:5000
+    volumes:
+      - ..:/app
