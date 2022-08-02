@@ -43,3 +43,5 @@ docker run -p 5000:5000 channel-flask
 docker-compose -f build-flask/docker-compose.yaml up --build
 ```
 
+### GraphQL vs REST
+flask-api-main vs flask-graphql-main

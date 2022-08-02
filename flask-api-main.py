@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request
 
-from data.DataManipulator import DataManipulator as dm
+from data.DataManipulator import DataManipulator as DM
 
 app = Flask(__name__)
 
@@ -37,6 +37,5 @@ def route_get_author(id: str):
 
 
 if __name__ == "__main__":
-    dm = dm()
+    dm = DM()
     app.run(debug=True, host='0.0.0.0', port=5000)
-
